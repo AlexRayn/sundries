@@ -6,6 +6,7 @@ public class Cat
 
     private double minWeight;
     private double maxWeight;
+    static double returnMassFood;
 
     public Cat()
     {
@@ -36,20 +37,36 @@ public class Cat
     {
         return weight;
     }
+    public void getWeightFood ()
+    {
+        returnMassFood = weight - originWeight;
+        System.out.println("масса седенной еды -  " + returnMassFood);
+    }
+
+    public void toilet ()
+    {
+        if (getWeight() >= 1000 && getWeight() <= 9000)
+        {
+            weight = weight - 100;
+            System.out.println("животное сходило в туалет");
+        }
+        else {System.out.println("мёртвое животное не может ходить в туалет");
+        }
+    }
 
     public String getStatus()
     {
         if(weight < minWeight) {
-            return "Dead";
+            return "умер(ла)";
         }
         else if(weight > maxWeight) {
-            return "Exploded";
+            return "взорван(а)";
         }
         else if(weight > originWeight) {
-            return "Sleeping";
+            return "спит";
         }
         else {
-            return "Playing";
+            return "играет";
         }
     }
 }
