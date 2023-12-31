@@ -17,7 +17,6 @@ public class Loader
         alex.feed(100000.0);
         alex.getStatus();
 
-
         Cat murka = new Cat();
         System.out.println("вес мурки - " + murka.getWeight());
         murka.meow();
@@ -54,5 +53,7 @@ public class Loader
         System.out.println("===============================================");
         System.out.println("виталий - " + vitalii.getWeight());
         System.out.println("том - " + tom.getWeight());
+        System.out.println("количество живых кошек - " + Cat.countCats);
+
     }
 }

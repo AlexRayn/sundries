@@ -7,6 +7,7 @@ public class Cat
     private double minWeight;
     private double maxWeight;
     static double returnMassFood;
+    static int countCats = 0;
 
     public Cat()
     {
@@ -14,6 +15,7 @@ public class Cat
         originWeight = weight;
         minWeight = 1000.0;
         maxWeight = 9000.0;
+        countCats += 1;
 
     }
 
@@ -53,13 +55,16 @@ public class Cat
         else {System.out.println("мёртвое животное не может ходить в туалет");
         }
     }
+     public static int getCountCats(){return countCats;}
 
     public String getStatus()
     {
         if(weight < minWeight) {
+            countCats -= 1;
             return "умер(ла)";
         }
         else if(weight > maxWeight) {
+            countCats -= 1;
             return "взорван(а)";
         }
         else if(weight > originWeight) {
