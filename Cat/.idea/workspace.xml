@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3566954-15db-468d-82d7-9b60a8957e26" name="Default" comment="created a variable with the total number of cats and a method returning this variable">
-      <change afterPath="$PROJECT_DIR$/src/ColorsCats.java" afterDir="false" />
+    <list default="true" id="d3566954-15db-468d-82d7-9b60a8957e26" name="Default" comment="created Enum ColorsCats,Added Constants count of eyes, min weight and max weight.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cat/Cat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cat/Cat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704018639733</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="created Enum ColorsCats,Added Constants count of eyes, min weight and max weight.">
+      <option name="closed" value="true" />
+      <created>1704040950594</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704040950594</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -307,7 +315,8 @@
     <MESSAGE value="add cats" />
     <MESSAGE value="added two method &#10;-getWeightFood&#10;-toilet" />
     <MESSAGE value="created a variable with the total number of cats and a method returning this variable" />
-    <option name="LAST_COMMIT_MESSAGE" value="created a variable with the total number of cats and a method returning this variable" />
+    <MESSAGE value="created Enum ColorsCats,Added Constants count of eyes, min weight and max weight." />
+    <option name="LAST_COMMIT_MESSAGE" value="created Enum ColorsCats,Added Constants count of eyes, min weight and max weight." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
