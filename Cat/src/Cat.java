@@ -6,6 +6,10 @@ public class Cat
 
     private double minWeight;
     private double maxWeight;
+    public static final int EYES_COUNT = 2;
+    public static final double MIN_WEIGHT = 1000.0;
+    public static final double Max_WEIGHT = 9000.0;
+
     static double returnMassFood;
     static int countCats = 0;
 
@@ -22,7 +26,7 @@ public class Cat
     public void meow()
     {
         weight = weight - 1;
-        System.out.println("Meow");
+        System.out.println("Мявк");
     }
 
     public void feed(Double amount)
