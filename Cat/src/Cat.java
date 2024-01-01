@@ -23,11 +23,18 @@ public class Cat
 
     }
 
+    public Cat(Double weight)
+    {
+        this();
+        this.weight = weight;
+    }
+
     public void meow()
     {
         if(weight >= MIN_WEIGHT && weight <=MAX_WEIGHT)
         {
-            weight = weight - 1;System.out.println("Мявк");
+            weight = weight - 1;System.out.print("Мявк ");
+            if(weight <= MIN_WEIGHT){System.out.println("ДОМЯУКАЛАСЬ");}
         }
     }
 
