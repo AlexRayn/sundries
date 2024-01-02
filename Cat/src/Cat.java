@@ -12,6 +12,7 @@ public class Cat
 
     static double returnMassFood;
     static int countCats = 0;
+    public String catColor;
 
     public Cat()
     {
@@ -20,8 +21,16 @@ public class Cat
         minWeight = 1000.0;
         maxWeight = 9000.0;
         countCats += 1;
-
     }
+
+    //сеттер который устанавливает окрас кошки
+    public void setCatColor(String color)
+    {
+        this.catColor = color;
+    }
+
+    //геттер который возвращает окрас кошки
+    public String getCatColor(){return catColor;}
 
     public Cat(Double weight)
     {
