@@ -29,6 +29,18 @@ public class Cat
         this.catColor = color;
     }
 
+    //конструктор для копирования кошки
+    public Cat(Cat otherCat) {
+
+
+        this.weight = otherCat.weight;
+        originWeight = otherCat.weight;
+        countCats = countCats + 1;
+        this.minWeight = otherCat.minWeight;
+        this.maxWeight = otherCat.maxWeight;
+        System.out.println("Создана кошка с весом: " + otherCat.getWeight());
+    }
+
     //геттер который возвращает окрас кошки
     public String getCatColor(){return catColor;}
 
@@ -69,7 +81,7 @@ public class Cat
 
     public void toilet ()
     {
-        if (getWeight() >= 1000 && getWeight() <= 9000)
+        if (getWeight() >= MIN_WEIGHT && getWeight() <= MAX_WEIGHT)
         {
             weight = weight - 100;
             System.out.println("животное сходило в туалет");

@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3566954-15db-468d-82d7-9b60a8957e26" name="Default" comment="created another Cat constructor to generate a cat with a fixed weight, created a kitten generation method that returns a kitten with a given weight, added three kittens using this method and a few other changes.">
+    <list default="true" id="d3566954-15db-468d-82d7-9b60a8957e26" name="Default" comment="created a variable that stores the color of the cat as well as heter and setter for this variable">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cat/Cat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cat/Cat.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Cat/Loader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cat/Loader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +86,9 @@
         <option value="$PROJECT_DIR$/src/Loader.java" />
       </list>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -290,7 +295,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704112890835</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="created a variable that stores the color of the cat as well as heter and setter for this variable">
+      <option name="closed" value="true" />
+      <created>1704208078066</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1704208078066</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -343,7 +356,8 @@
     <MESSAGE value="added comments" />
     <MESSAGE value="added a method to check if the cat is alive" />
     <MESSAGE value="created another Cat constructor to generate a cat with a fixed weight, created a kitten generation method that returns a kitten with a given weight, added three kittens using this method and a few other changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="created another Cat constructor to generate a cat with a fixed weight, created a kitten generation method that returns a kitten with a given weight, added three kittens using this method and a few other changes." />
+    <MESSAGE value="created a variable that stores the color of the cat as well as heter and setter for this variable" />
+    <option name="LAST_COMMIT_MESSAGE" value="created a variable that stores the color of the cat as well as heter and setter for this variable" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

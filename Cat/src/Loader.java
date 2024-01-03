@@ -64,7 +64,16 @@ public class Loader
 
         // Вывод общего количества живых кошек, используя метод countCats.
         System.out.println("количество живых кошек - " + Cat.countCats);
+        System.out.println("вес виталия - " + vitalii.getWeight());
 
+
+        //создаем нового кота используя конструктор копированич, и проверяем работает ли он
+        Cat ben = new Cat(vitalii);
+        System.out.println("вес виталия - " + vitalii.getWeight());
+        System.out.println("вес бена - " + ben.getWeight());
+        ben.feed(1000.0);
+        System.out.println("вес виталия после кормления боба - " + vitalii.getWeight());
+        System.out.println("вес бена после кормления - " + ben.getWeight());
 
     }
 }
