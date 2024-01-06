@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3566954-15db-468d-82d7-9b60a8957e26" name="Default" comment="created a variable that stores the color of the cat as well as heter and setter for this variable">
+    <list default="true" id="d3566954-15db-468d-82d7-9b60a8957e26" name="Default" comment="created a jar file">
+      <change afterPath="$PROJECT_DIR$/../IntegerExperiments/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IntegerExperiments/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IntegerExperiments/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IntegerExperiments/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IntegerExperiments/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IntegerExperiments/IntegerExperiments.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,20 +125,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Loader.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;03__ObjectsAndClasses&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/alex/Рабочий стол/sudnries/Cat&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Loader.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "IntegerExperiments",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/alex/Рабочий стол/sudnries/Cat",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
@@ -302,7 +308,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704208078066</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="created a jar file">
+      <option name="closed" value="true" />
+      <created>1704309919590</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1704309919590</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -356,7 +370,8 @@
     <MESSAGE value="added a method to check if the cat is alive" />
     <MESSAGE value="created another Cat constructor to generate a cat with a fixed weight, created a kitten generation method that returns a kitten with a given weight, added three kittens using this method and a few other changes." />
     <MESSAGE value="created a variable that stores the color of the cat as well as heter and setter for this variable" />
-    <option name="LAST_COMMIT_MESSAGE" value="created a variable that stores the color of the cat as well as heter and setter for this variable" />
+    <MESSAGE value="created a jar file" />
+    <option name="LAST_COMMIT_MESSAGE" value="created a jar file" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
