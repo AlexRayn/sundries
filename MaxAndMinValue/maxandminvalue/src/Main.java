@@ -50,6 +50,5 @@ public class Main {
         //c помощью (int) приводим char к числовому значению / по умолчанию используется 0
         System.out.println("Максимльное число для типа cher (0) " + (int) Character.MAX_VALUE);
         System.out.println("Минимальное число для типа cher (0) " + (int) Character.MIN_VALUE);
-
     }
 }
