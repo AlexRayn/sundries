@@ -24,11 +24,6 @@ public class Main {
             }
         }
 
-        for(String carNumber : carNumbers)
-        {
-            System.out.println(carNumber);
-        }
-
         // Выводим общее количество сгенерированных номеров
         System.out.println("было сгенерированно - " + carNumbers.size() + " номеров");
 
