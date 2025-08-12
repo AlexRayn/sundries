@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="WARN">
+
+    <!-- 📦 аппендеры То куда пишутся логи -->
+    <appenders>
+        <!--  заполнять информацией о станциях, которые ищут (существующие)  -->
+        <File name="searchLog" fileName="logs/search.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+        <!-- заполнять информацией об ошибочном вводе-->
+        <File name="errorsLog" fileName="logs/input_errors.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+        <!--  Root Logger  for Exceptions) -->
+        <File name="exeLog" fileName="logs/exceptions.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+    </appenders>
+
+    <!-- 🗂 Логгеры -->
+    <loggers>
+        <!-- Корневой логер, уровень info -->
+        <logger name="searchLog" level="info" additivity="false">
+            <appender-ref ref="searchLog" level="info"/>
+        </logger>
+        <logger name="errorsLog" level="error" additivity="false">
+            <appender-ref ref="errorsLog" level="error"/>
+        </logger>
+        <!-- 🌟 Root логер for all exceptions-->
+        <root level="error">
+            <appender-ref ref="exeLog" level="error"/>
+        </root>
+    </loggers>
+</configuration>

@@ -1,5 +1,7 @@
 import core.Line;
 import core.Station;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -12,6 +14,9 @@ import java.util.Scanner;
 
 public class Main
 {
+    //объявление логеров
+    public static Logger searchLog, errorsLog, exeLog;
+
     private static String dataFile = "src/main/resources/map.json";
     private static Scanner scanner;
 
@@ -19,21 +24,34 @@ public class Main
 
     public static void main(String[] args)
     {
+        //инициализация логеров
+        searchLog = LogManager.getLogger("searchLog");
+        errorsLog = LogManager.getLogger("errorsLog");
+        exeLog = LogManager.getRootLogger();
+
         RouteCalculator calculator = getRouteCalculator();
 
         System.out.println("Программа расчёта маршрутов метрополитена Санкт-Петербурга\n");
         scanner = new Scanner(System.in);
         for(;;)
         {
-            Station from = takeStation("Введите станцию отправления:");
-            Station to = takeStation("Введите станцию назначения:");
+            try {
+                Station from = takeStation("Введите станцию отправления:");
+                Station to = takeStation("Введите станцию назначения:");
 
-            List<Station> route = calculator.getShortestRoute(from, to);
-            System.out.println("Маршрут:");
-            printRoute(route);
+                List<Station> route = calculator.getShortestRoute(from, to);
+                System.out.println("Маршрут:");
+                printRoute(route);
 
-            System.out.println("Длительность: " +
-                RouteCalculator.calculateDuration(route) + " минут");
+                System.out.println("Длительность: " +
+                        RouteCalculator.calculateDuration(route) + " минут");
+                //добавляю exception для проверки логирования
+                throw new IllegalArgumentException("Все остановится после этого, Я сама неотвратимость)");
+            }
+            catch (Exception ex){
+                exeLog.error(ex.getMessage());
+            }
+
         }
     }
 
@@ -71,8 +89,12 @@ public class Main
             String line = scanner.nextLine().trim();
             Station station = stationIndex.getStation(line);
             if(station != null) {
+                //отправляем станции, которые ищут в searchLog, если они существуют
+                searchLog.info(line);
                 return station;
             }
+            //отправляем в лог ошибок на найденные станции
+            errorsLog.error("Станция " + line + " не найдена");
             System.out.println("Станция не найдена :(");
         }
     }
