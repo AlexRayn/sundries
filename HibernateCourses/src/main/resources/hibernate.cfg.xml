@@ -1,0 +1,32 @@
+<!-- Конфигурация Hibernate -->
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Настройки подключения к базе данных -->
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <!-- JDBC-драйвер для MySQL (обеспечивает соединение) -->
+        <property name="connection.url">jdbc:mysql://localhost:3306/skillbox?useSSL=false</property>
+        <!-- URL подключения к базе данных skillbox, находящейся на локальном компьютере -->
+        <property name="connection.username">root</property>
+        <!-- Имя пользователя БД -->
+        <property name="connection.password">hihihaha</property>
+        <!-- Пароль от БД -->
+
+        <!-- Настройки Hibernate -->
+        <!-- Настройки пула соединений (количество одновременно открытых подключений к БД) -->
+        <property name="connection.pool_size">10</property>
+        <!-- Выбор SQL-диалекта под используемую СУБД  -->
+        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <!-- Показывать SQL-запросы, которые Hibernate отправляет в БД (для отладки) -->
+        <property name="show_sql">true</property>
+        <!-- Управление текущим сеансом Hibernate через поток (стандартная настройка) -->
+        <property name="current_session_context_class">thread</property>
+
+        <!-- Режим работы с БД 🛠сноска🛠 -->
+        <property name="hbm2ddl.auto">validate</property>
+
+        <!-- Указываем, Класс-сущность, связанный с таблицей БД -->
+        <mapping class="Course"/>
+
+    </session-factory>
+</hibernate-configuration>
