@@ -9,7 +9,7 @@
         <!-- URL подключения к базе данных skillbox, находящейся на локальном компьютере -->
         <property name="connection.username">root</property>
         <!-- Имя пользователя БД -->
-        <property name="connection.password">hihihaha</property>
+        <property name="connection.password">hahaha</property>
         <!-- Пароль от БД -->
 
         <!-- Настройки Hibernate -->
@@ -26,7 +26,10 @@
         <property name="hbm2ddl.auto">validate</property>
 
         <!-- Указываем, Класс-сущность, связанный с таблицей БД -->
-        <mapping class="Course"/>
+        <mapping class="entity.Course"/>
+        <mapping class="entity.Teacher"/>
+        <mapping class="entity.Student"/>
+        <mapping class="entity.Subscription"/>
 
     </session-factory>
 </hibernate-configuration>

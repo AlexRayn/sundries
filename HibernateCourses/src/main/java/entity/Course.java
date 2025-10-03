@@ -1,9 +1,10 @@
+package entity;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "Courses")
-
-
 public class Course {
 
     @Id
@@ -19,14 +20,27 @@ public class Course {
 
     private String description;
 
-    @Column(name = "teacher_id")
-    private int teacherId;
     @Column(name = "students_count")
     private Integer studentsCount;
+
     private int price;
+
     @Column(name = "price_per_hour")
     private float pricePerHour;
 
+    // Связь многие-к-одному: много курсов → один учитель
+    // Свойство cascade задаёт, как операции с этим объектом (сохранение, обновление, удаление) будут распространяться на связанные сущности.
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "teacher_id")
+    // @JoinColumn указывает колонку в таблице Courses, которая хранит внешний ключ на Teachers
+    private Teacher teacher;
+
+    // Связь один-ко-многим: один курс → много подписок
+    @OneToMany(mappedBy = "course")
+    // mappedBy указывает, что связь управляется полем "course" в классе Subscription
+    private List<Subscription> subscriptions;
+
+    // Геттеры и сеттеры
     public int getDuration() {
         return duration;
     }
@@ -67,14 +81,6 @@ public class Course {
         this.description = description;
     }
 
-    public int getTeacherId() {
-        return teacherId;
-    }
-
-    public void setTeacherId(int teacherId) {
-        this.teacherId = teacherId;
-    }
-
     public int getStudentsCount() {
         return studentsCount;
     }
@@ -97,5 +103,23 @@ public class Course {
 
     public void setPricePerHour(float pricePerHour) {
         this.pricePerHour = pricePerHour;
+    }
+
+    // Геттер и сеттер для Teacher
+    public Teacher getTeacher() {
+        return teacher;
+    }
+
+    public void setTeacher(Teacher teacher) {
+        this.teacher = teacher;
+    }
+
+    // Геттер и сеттер для Subscription
+    public List<Subscription> getSubscriptions() {
+        return subscriptions;
+    }
+
+    public void setSubscriptions(List<Subscription> subscriptions) {
+        this.subscriptions = subscriptions;
     }
 }
